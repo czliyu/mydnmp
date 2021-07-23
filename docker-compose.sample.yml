@@ -34,6 +34,8 @@ services:
         PHP_EXTENSIONS: ${PHP_EXTENSIONS}
         TZ: "$TZ"
     container_name: php
+    ports: 
+      - "${PHP_PORT_9000}:9000"
     expose:
       - 9501
     extra_hosts:
